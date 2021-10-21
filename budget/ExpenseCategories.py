@@ -1,5 +1,5 @@
 import timeit
-from budget.Expense import Expense
+from . import Expense
 import matplotlib.pyplot as plt
 
 def main():
