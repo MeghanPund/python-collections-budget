@@ -1,4 +1,4 @@
-import Expense
+from budget.Expense import Expense
 import matplotlib.pyplot as plt
 
 class BudgetList:
