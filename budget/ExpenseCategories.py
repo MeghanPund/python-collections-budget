@@ -19,7 +19,7 @@ def main():
     print(timeit.timeit(stmt = "expenses.categorize_for_loop()",
                         setup=
                         '''
-import Expense
+from . import Expense
 expenses = Expense.Expenses()
 expenses.read_expenses('data/spending_data.csv')
                         ''',
@@ -29,7 +29,7 @@ expenses.read_expenses('data/spending_data.csv')
     print(timeit.timeit(stmt = "expenses.categorize_set_comprehension()",
                         setup=
                         '''
-import Expense
+from . import Expense
 expenses = Expense.Expenses()
 expenses.read_expenses('data/spending_data.csv')
                         ''',
